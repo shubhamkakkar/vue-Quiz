@@ -19,7 +19,7 @@ Clone this repository or download it on your system
    *run the following  command to install all the required dependencies.*
    
    if(router is not installed)
-   npm install vue-router --save
+  # npm install vue-router --save
 ------------------------------------------------------------------------------------------------------------------------------------------
 # npm run serve
 
