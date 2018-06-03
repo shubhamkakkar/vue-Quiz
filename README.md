@@ -20,7 +20,7 @@ Clone this repository or download it on your system
    
            ----------------------------------------------------------------------------
 If(router is not installed)
-  # npm install vue-router --save
+  # npm install --save vue-router 
   
 ------------------------------------------------------------------------------------------------------------------------------------------
 # npm run serve
