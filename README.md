@@ -12,14 +12,15 @@ I am fellow developer, please ignore any typo.
 ----------------------------------------------------------------------------------------------------------------------------------------
 Clone this repository or download it on your system
 ----------------------------------------------------------------------------------------------------------------------------------------
-* require node *
+* require node 
 
 # npm install
 
    *run the following  command to install all the required dependencies.*
-   
-   if(router is not installed)
+           ----------------------------------------------------------------------------
+If(router is not installed)
   # npm install vue-router --save
+  
 ------------------------------------------------------------------------------------------------------------------------------------------
 # npm run serve
 
