@@ -1,10 +1,15 @@
 <template>
 <div>
-    <navbar-s class=""></navbar-s>
+    <transition
+     appear
+     enter-active-class="animated slideInDown"
+    >
+        <navbar-s></navbar-s>
+    </transition>
     <div class="container mt-5">
         <div class="row mx-4">
             <div class="col">
-                <h1 class="text-center">
+                <h1 class="text-center animated tada">
                     Welcome Developers.
                  </h1>
                 <p class="text-center">
@@ -35,6 +40,7 @@
                 </div>
             </div>
         </div>
+    <br>
     </div>
 </div>
 </template>

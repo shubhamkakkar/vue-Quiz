@@ -4,10 +4,8 @@ import q1 from './components/QA/1/Q1.vue';
 import q2 from './components/QA/2/Q2.vue';
 import q3 from './components/QA/3/Q3.vue';
 import q4 from './components/QA/4/Q4.vue';
-import q5 from './components/QA/5/Q5.vue';
 
 export const routes = [
-    
     {
         path : '', name : 'quizBegin', components : {default : quizBegin}
     },
@@ -22,13 +20,9 @@ export const routes = [
     },
     {
         path : '/q4',  name : 'q4', components: {default : q4}
-    }
-    ,
+    },
     {
-        path : '/q5',  name : 'q5', components: {default : q5}
+        path : '*',  redirect : '/'
     }
-    
-    
-    
 ];
 

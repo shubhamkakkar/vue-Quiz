@@ -13,18 +13,19 @@ export const funMixin= {
  }
 } 
 
- function toggleShow(index){
+function toggleShow(index){
     let show = document.getElementById('explanation');
     if(show.style.display === 'none'){
        show.style.display = 'block'; 
     }
 }
 
+
 export const dataBtn = {
     data(){
         return{
-           questions : ['Question 1', 'Question 2', 'Question 3', 'Question 4', 'Question 5'],
-           nameRoute : ['q1', 'q2', 'q3', 'q4', 'q5']
+           questions : ['Question 1', 'Question 2', 'Question 3', 'Question 4'],
+           nameRoute : ['q1', 'q2', 'q3', 'q4']
         };
     }
 }

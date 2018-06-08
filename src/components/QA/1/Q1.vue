@@ -5,25 +5,38 @@
             <div class="row bg-dark text-white p-5">
                 <div class="col-md-6 border" style="white-space:pre-line">
                     <footer class="text-muted float-right pr-0">html-file</footer>
-                    <div style="">
+                    <transition
+                      appear 
+                      enter-active-class="animated slideInLeft"
+                    >
+                        <div>
                         {{ question.html }}
-                    </div>
+                        </div> 
+                    </transition> 
+                   
                 </div>
                 <div class="col-md-6 border pl-5">
                     <footer class="text-muted float-right">js-file</footer>
+                    <transition
+                      appear 
+                      enter-active-class="animated slideInRight"
+                    >
                     <div style="white-space:pre-line;">
                         {{ question.js }}
                     </div>
+                  </transition>
                 </div>
             </div>
             <div class="row mt-3">
                 <div class="col-md-6 mx-auto" v-for="(option,index) in options" :key="option[index]">
-                    <button :id="option.id" class="my-1 btn btn-outline-primary w-75 h-75 text-left" @click="evaluate(index)" :index="option[index]" v-html="option">
-                    </button>
+                  <a href="#explanation" :id="option.id" class="my-1 btn btn-outline-primary w-75 h-75 text-left" @click="evaluate(index)" :index="option[index]" v-html="option">
+                  </a>  
+                    <!-- <button :id="option.id" class="my-1 btn btn-outline-primary w-75 h-75 text-left" @click="evaluate(index);" :index="option[index]" v-html="option">
+                    </button> -->
                 </div>
             </div>
         </div>
-        <div id="explanation" v-html="explanation" style="white-space:pre-line;display : none"></div>
+        <h4 id="explanation" v-html="explanation" style="white-space:pre-line;display : none" class="animated flash"></h4>
     </div>
 </template>
 
@@ -146,7 +159,7 @@ export default {
 
       explanation: `
   
-                            <div class="text-justify">
+                            <div class="text-center">
   
                               Vue.js doen't support onload function, the alternative is mounted life cycle hook 
   

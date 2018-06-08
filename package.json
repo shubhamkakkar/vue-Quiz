@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "animate.css": "^3.6.1",
     "routes": "^2.1.0",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1"
