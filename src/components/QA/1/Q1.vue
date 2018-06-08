@@ -31,12 +31,10 @@
                 <div class="col-md-6 mx-auto" v-for="(option,index) in options" :key="option[index]">
                   <a href="#explanation" :id="option.id" class="my-1 btn btn-outline-primary w-75 h-75 text-left" @click="evaluate(index)" :index="option[index]" v-html="option">
                   </a>  
-                    <!-- <button :id="option.id" class="my-1 btn btn-outline-primary w-75 h-75 text-left" @click="evaluate(index);" :index="option[index]" v-html="option">
-                    </button> -->
                 </div>
             </div>
         </div>
-        <h4 id="explanation" v-html="explanation" style="white-space:pre-line;display : none" class="animated flash"></h4>
+        <div id="explanation" v-html="explanation" style="white-space:pre-line;display : none" class="animated flash"></div>
     </div>
 </template>
 
