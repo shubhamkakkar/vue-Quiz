@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "animate.css": "^3.6.1",
+    "express": "^4.16.3",
     "routes": "^2.1.0",
+    "serve-static": "^1.13.2",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1"
   },
